@@ -28,7 +28,7 @@
       <td>{{ heroe.poder }}</td>
       <td>
         <label *ngIf="heroe.vivo" class="badge badge-success">Vivo</label>
-        <label *ngIf="!heroe.vivo" class="badge badge-danger">Tieso</label>
+        <label *ngIf="!heroe.vivo" class="badge badge-danger">Muerto</label>
       </td>
       <td>
         <button class="btn btn-info mr-1" [routerLink]="['/heroe', heroe.id]">

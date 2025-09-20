@@ -1,4 +1,4 @@
-# 🦸‍♂️ HeroeApp
+# 🦸‍♂️ Heroe App
 
 Aplicación web desarrollada en **Angular 16** que gestiona héroes en tiempo real usando **Firebase Realtime Database**.
 
