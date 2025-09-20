@@ -1,27 +1,109 @@
-# HeroeApp
+# 🦸‍♂️ HeroeApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Aplicación web desarrollada en **Angular 16** que gestiona héroes en tiempo real usando **Firebase Realtime Database**.
 
-## Development server
+El proyecto permite **crear, listar, editar y eliminar héroes**, reforzando conceptos clave de Angular como:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Enrutamiento con parámetros dinámicos
+- Uso de **Servicios** para centralizar la lógica de negocio
+- Conexión a **Firebase Realtime Database**
+- Manejo de **Observables** con RxJS
+- Alertas amigables con **SweetAlert2**
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📸 Demo
 
-## Build
+🔗 **Visita la demo en línea:** [HeroeApp en Netlify](https://tu-enlace.netlify.app)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Listado de héroes**  
+  ![HeroeApp Screenshot](media/screenshot_1.png)
 
-## Running unit tests
+- **Detalle de un héroe**  
+  ![HeroeApp Screenshot](media/screenshot_2.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Formulario de héroe**  
+  ![HeroeApp Screenshot](media/screenshot_3.png)
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Tecnologías Utilizadas
 
-## Further help
+- **Angular 16**
+- **Firebase Realtime Database**
+- **RxJS**
+- **TypeScript**
+- **SweetAlert2**
+- **HTML5 / CSS3**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/
+│ ├── models/
+│ │ └── heroe.model.ts # Modelo de datos de héroe
+│ ├── pages/
+│ │ ├── heroes/        # Vista listado de héroes
+│ │ └── heroe/         # Vista detalle/edición de un héroe
+│ ├── services/
+│ │ └── heroes.service.ts   # Conexión con Firebase
+│ ├── app-routing.module.ts # Configuración de rutas
+│ ├── app.component.ts      # Componente raíz
+│ └── app.module.ts         # Módulo principal
+├── assets/                 # Estilos y recursos estáticos
+├── index.html
+├── main.ts
+├── styles.css
+└── _redirects              # Reglas de Netlify para SPA
+```
+
+---
+
+## 🔑 Funcionalidades
+
+✅ Listar héroes desde Firebase  
+✅ Crear nuevos héroes  
+✅ Editar héroes existentes  
+✅ Eliminar héroes  
+✅ Navegación dinámica con rutas (`/heroes/:id`)  
+✅ Confirmaciones y notificaciones con **SweetAlert2**  
+✅ Integración con **Firebase Realtime Database**
+
+---
+
+## 📦 Instalación
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/david99cartagena/HeroeAppRealtimeDatabase.git
+```
+
+```bash
+cd HeroeAppRealtimeDatabase
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecuta el servidor local:
+
+```bash
+npm start
+```
+
+```bash
+ng serve
+```
+
+La aplicación estará disponible en: `http://localhost:4200/`
+
+---
+
+Basado en el curso de **Fernando Herrera** – [Angular: De Cero a Experto (Edición 2018)](https://www.udemy.com/course/angular-de-cero-a-experto/)
