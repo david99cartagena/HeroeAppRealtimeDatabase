@@ -14,7 +14,7 @@ El proyecto permite **crear, listar, editar y eliminar héroes**, reforzando con
 
 ## 📸 Demo
 
-🔗 **Visita la demo en línea:** [HeroeApp en Netlify](https://resonant-pixie-e8b4f7.netlify.app/heroes)
+🔗 **Visita la demo en línea:** [Heroe App en Netlify](https://resonant-pixie-e8b4f7.netlify.app/heroes)
 
 - **Listado de héroes**  
   ![HeroeApp Screenshot](https://raw.githubusercontent.com/david99cartagena/HeroeAppRealtimeDatabase/refs/heads/main/media/Screenshot_1.png)
