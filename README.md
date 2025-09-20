@@ -17,13 +17,10 @@ El proyecto permite **crear, listar, editar y eliminar héroes**, reforzando con
 🔗 **Visita la demo en línea:** [HeroeApp en Netlify](https://tu-enlace.netlify.app)
 
 - **Listado de héroes**  
-  ![HeroeApp Screenshot](media/screenshot_1.png)
-
-- **Detalle de un héroe**  
-  ![HeroeApp Screenshot](media/screenshot_2.png)
+  ![HeroeApp Screenshot](https://raw.githubusercontent.com/david99cartagena/HeroeAppRealtimeDatabase/refs/heads/main/media/Screenshot_1.png)
 
 - **Formulario de héroe**  
-  ![HeroeApp Screenshot](media/screenshot_3.png)
+  ![HeroeApp Screenshot](https://raw.githubusercontent.com/david99cartagena/HeroeAppRealtimeDatabase/refs/heads/main/media/Screenshot_2.png)
 
 ---
 
