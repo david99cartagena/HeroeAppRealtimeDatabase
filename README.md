@@ -10,8 +10,6 @@ El proyecto permite **crear, listar, editar y eliminar héroes**, reforzando con
 - Manejo de **Observables** con RxJS
 - Alertas amigables con **SweetAlert2**
 
----
-
 ## 📸 Demo
 
 🔗 **Visita la demo en línea:** [Heroe App en Netlify](https://resonant-pixie-e8b4f7.netlify.app/heroes)
@@ -22,8 +20,6 @@ El proyecto permite **crear, listar, editar y eliminar héroes**, reforzando con
 - **Formulario de héroe**  
   ![HeroeApp Screenshot](https://raw.githubusercontent.com/david99cartagena/HeroeAppRealtimeDatabase/refs/heads/main/media/Screenshot_2.png)
 
----
-
 ## 🚀 Tecnologías Utilizadas
 
 - **Angular 16**
@@ -32,8 +28,6 @@ El proyecto permite **crear, listar, editar y eliminar héroes**, reforzando con
 - **TypeScript**
 - **SweetAlert2**
 - **HTML5 / CSS3**
-
----
 
 ## 📁 Estructura del Proyecto
 
@@ -57,8 +51,6 @@ src/
 └── _redirects              # Reglas de Netlify para SPA
 ```
 
----
-
 ## 🔑 Funcionalidades
 
 ✅ Listar héroes desde Firebase  
@@ -68,8 +60,6 @@ src/
 ✅ Navegación dinámica con rutas (`/heroes/:id`)  
 ✅ Confirmaciones y notificaciones con **SweetAlert2**  
 ✅ Integración con **Firebase Realtime Database**
-
----
 
 ## 📦 Instalación
 
@@ -101,6 +91,27 @@ ng serve
 
 La aplicación estará disponible en: `http://localhost:4200/`
 
----
+## ⚙️ Configuración de Firebase
+
+Este proyecto usa **Firebase Realtime Database** como backend.
+
+Si quieres usar tu propia base de datos:
+
+1. Regístrate en [Firebase Console](https://console.firebase.google.com/).
+2. Crea un nuevo proyecto y habilita **Realtime Database** en modo lectura/escritura.
+3. Copia la **URL de la base de datos** ( por ejemplo: `https://TU-PROYECTO-default-rtdb.firebaseio.com`).
+4. Reemplaza la URL en el servicio `heroes.service.ts`:
+
+```ts
+@Injectable({
+  providedIn: 'root',
+})
+
+export class HeroesService {
+  private url = 'https://TU-PROYECTO-default-rtdb.firebaseio.com';
+  private puntojson = '.json';
+  ...
+}
+```
 
 Basado en el curso de **Fernando Herrera** – [Angular: De Cero a Experto (Edición 2018)](https://www.udemy.com/course/angular-de-cero-a-experto/)
